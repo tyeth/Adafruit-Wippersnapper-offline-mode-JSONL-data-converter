@@ -28,4 +28,4 @@ See more details on WipperSnapper Offline Data Logger usage at https://learn.ada
 
 To process all `.log` files in the current and subdirectories into a single output file:
 ```sh
-python jsonl_to_xlsx.py -r
+python jsonl_to_xlsx.py -r ./

@@ -52,7 +52,7 @@ def jsonl_to_xlsx(config_path, log_path, output_path, wipper_boot_path,interacti
 
 
     if interactive_mode:
-        click.echo("No arguments passed. Entering interactive mode.")
+        click.echo("No path arguments passed. Entering interactive mode.")
         log_path = click.prompt('Enter the path to the log file or folder, (blank for current)', default=log_path)
         config_path = click.prompt('Optionally enter the path to the config file', default=config_path if config_path else log_path)
         wipper_boot_path = click.prompt('Optionally enter the path to the wipper_boot_out.txt file', default=wipper_boot_path if wipper_boot_path else log_path)
