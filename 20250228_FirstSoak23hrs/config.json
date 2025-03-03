@@ -1,0 +1,55 @@
+{
+    "exportedFromDevice": {
+        "referenceVoltage": 3.3,
+        "totalGPIOPins": 18,
+        "totalAnalogPins": 4,
+        "sd_cs_pin": 23,
+        "statusLEDBrightness": 0.5,
+        "rtc": "DS3231"
+    },
+    "components": [
+        {
+            "name": "BME280 Sensor",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bme280",
+            "period": 2,
+            "i2cDeviceAddress": "0x77",
+            "i2cDeviceSensorTypes": [
+                {"type": "relative-humidity"},
+                {"type": "ambient-temp"},
+                {"type": "ambient-temp-fahrenheit"},
+                {"type": "pressure"},
+                {"type": "altitude"}
+            ]
+        },
+        {
+            "name": "SCD40/SCD41 Sensor",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "scd40",
+            "period": 5,
+            "i2cDeviceAddress": "0x62",
+            "i2cDeviceSensorTypes": [
+                {"type": "ambient-temp"},
+                {"type": "ambient-temp-fahrenheit"},
+                {"type": "relative-humidity"},
+                {"type": "co2"}
+            ]
+        },
+        {
+            "name": "SEN54 Sensor",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sen54",
+            "period": 2,
+            "i2cDeviceAddress": "0x69",
+            "i2cDeviceSensorTypes": [
+                {"type": "ambient-temp"},
+                {"type": "ambient-temp-fahrenheit"},
+                {"type": "relative-humidity"},
+                {"type": "pm10-std"},
+                {"type": "pm25-std"},
+                {"type": "pm100-std"},
+                {"type": "voc-index"}
+            ]
+        }
+    ]
+}

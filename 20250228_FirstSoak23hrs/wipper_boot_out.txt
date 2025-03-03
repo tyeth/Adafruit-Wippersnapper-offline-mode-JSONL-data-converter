@@ -1,0 +1,4 @@
+Adafruit.io WipperSnapper
+Firmware Version: 1.0.0-offline-beta.1
+Board ID: feather-rp2040-adalogger
+MAC Address: 00:00:00:00:00:00
