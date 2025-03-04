@@ -23,10 +23,11 @@ See more details on WipperSnapper Offline Data Logger usage at https://learn.ada
     - `wipper-boot-path`: Path to the wipper_boot_out.txt file (default: same as log-path)
     - `--interactive`: Enter interactive mode to input paths manually (default: true if no path arguments)
     - `--recurse`, `-r`: Recurse into directories to find log files (default: true)
+    - `--merged`: Output a single file from all data, instead of one output file per log file (default: false)
     - `--csv`: Output to CSV instead of Excel format (default: false - ouput .xlsx files)
 
 ## Example
 
 To process all `.log` files in the current and subdirectories into a single output file:
 ```sh
-python jsonl_to_xlsx.py -r ./
+python jsonl_to_xlsx.py -r --merged ./
