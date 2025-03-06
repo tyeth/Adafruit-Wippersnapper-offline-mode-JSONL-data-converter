@@ -31,3 +31,8 @@ See more details on WipperSnapper Offline Data Logger usage at https://learn.ada
 To process all `.log` files in the current and subdirectories into a single output file:
 ```sh
 python jsonl_to_xlsx.py -r --merged ./
+```
+
+There is also a sample config file provided and sample log file in the SampleData/ folder.
+
+Lastly an LLM (ChatGPT 4.5) generated config.json for all i2c sensors is `example-config.json`, but know the file is for copying chunks from (or comment out sections) not using as-is.

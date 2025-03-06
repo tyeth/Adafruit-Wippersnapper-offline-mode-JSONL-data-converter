@@ -1,0 +1,1401 @@
+{
+    "exportedFromDevice": {
+        "referenceVoltage": 3.3,
+        "totalGPIOPins": 18,
+        "totalAnalogPins": 4,
+        "sd_cs_pin": 23,
+        "statusLEDBrightness": 0.5
+    },
+    "components": [
+        {
+            "name": "BME280 Sensor",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bme280",
+            "period": 15,
+            "i2cDeviceAddress": "0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "relative-humidity"
+                },
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                },
+                {
+                    "type": "altitude"
+                }
+            ]
+        },
+        {
+            "name": "ADT7410",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "adt7410",
+            "period": 15,
+            "i2cDeviceAddress": "0x48", // Alternative addresses: 0x49, 0x4A, 0x4B",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                }
+            ]
+        },
+        {
+            "name": "AHT20",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "aht20",
+            "period": 15,
+            "i2cDeviceAddress": "0x38",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "AHT21",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "aht21",
+            "period": 15,
+            "i2cDeviceAddress": "0x38",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "AM2301B",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "am2301b",
+            "period": 15,
+            "i2cDeviceAddress": "0x38",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "AM2315C",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "am2315c",
+            "period": 15,
+            "i2cDeviceAddress": "0x38",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "BH1750",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bh1750",
+            "period": 15,
+            "i2cDeviceAddress": "0x23", // Alternative addresses: 0x5C",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "light"
+                }
+            ]
+        },
+        {
+            "name": "BME280",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bme280",
+            "period": 15,
+            "i2cDeviceAddress": "0x76", // Alternative addresses: 0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pressure"
+                },
+                {
+                    "type": "altitude"
+                }
+            ]
+        },
+        {
+            "name": "BME680",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bme680",
+            "period": 15,
+            "i2cDeviceAddress": "0x76", // Alternative addresses: 0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pressure"
+                },
+                {
+                    "type": "altitude"
+                },
+                {
+                    "type": "gas-resistance"
+                }
+            ]
+        },
+        {
+            "name": "BME688",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bme688",
+            "period": 15,
+            "i2cDeviceAddress": "0x76", // Alternative addresses: 0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pressure"
+                },
+                {
+                    "type": "altitude"
+                },
+                {
+                    "type": "gas-resistance"
+                }
+            ]
+        },
+        {
+            "name": "BMP280",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bmp280",
+            "period": 15,
+            "i2cDeviceAddress": "0x76", // Alternative addresses: 0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                },
+                {
+                    "type": "altitude"
+                }
+            ]
+        },
+        {
+            "name": "BMP388",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bmp388",
+            "period": 15,
+            "i2cDeviceAddress": "0x76", // Alternative addresses: 0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                },
+                {
+                    "type": "altitude"
+                }
+            ]
+        },
+        {
+            "name": "BMP390",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "bmp390",
+            "period": 15,
+            "i2cDeviceAddress": "0x76", // Alternative addresses: 0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                },
+                {
+                    "type": "altitude"
+                }
+            ]
+        },
+        {
+            "name": "DHT20",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "dht20",
+            "period": 15,
+            "i2cDeviceAddress": "0x38",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "DPS310",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "dps310",
+            "period": 15,
+            "i2cDeviceAddress": "0x76", // Alternative addresses: 0x77",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "DS2484",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "ds2484",
+            "period": 15,
+            "i2cDeviceAddress": "0x18",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                }
+            ]
+        },
+        {
+            "name": "ENS160",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "ens160",
+            "period": 15,
+            "i2cDeviceAddress": "0x52", // Alternative addresses: 0x53",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "tvoc"
+                },
+                {
+                    "type": "eco2"
+                },
+                {
+                    "type": {
+                        "displayName": "AQI",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "HDC302x",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "hdc302x",
+            "period": 15,
+            "i2cDeviceAddress": "0x44", // Alternative addresses: 0x45, 0x46, 0x47",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "HTS221",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "hts221",
+            "period": 15,
+            "i2cDeviceAddress": "0x5F",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "HTU21D",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "htu21d",
+            "period": 15,
+            "i2cDeviceAddress": "0x40",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "HTU31D",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "htu31d",
+            "period": 15,
+            "i2cDeviceAddress": "0x40", // Alternative addresses: 0x41",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "INA219",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "ina219",
+            "period": 15,
+            "i2cDeviceAddress": "0x40", // Alternative addresses: 0x41, 0x44, 0x45",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "voltage"
+                },
+                {
+                    "type": "current"
+                }
+            ]
+        },
+        {
+            "name": "LC709203F",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "lc709203f",
+            "period": 15,
+            "i2cDeviceAddress": "0x0B",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Battery Cell Voltage",
+                        "sensorType": "voltage"
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "Battery Cell Percent",
+                        "sensorType": "unitless-percent"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LPS22HB",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "lps22hb",
+            "period": 15,
+            "i2cDeviceAddress": "0x5C", // Alternative addresses: 0x5D",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "LPS25HB",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "lps25hb",
+            "period": 15,
+            "i2cDeviceAddress": "0x5C", // Alternative addresses: 0x5D",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "LPS28DFW",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "lps28dfw",
+            "period": 15,
+            "i2cDeviceAddress": "0x5C", // Alternative addresses: 0x5D",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "LPS33HW",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "lps33hw",
+            "period": 15,
+            "i2cDeviceAddress": "0x5C", // Alternative addresses: 0x5D",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "LPS35HW",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "lps35hw",
+            "period": 15,
+            "i2cDeviceAddress": "0x5C", // Alternative addresses: 0x5D",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "LTR-303",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "ltr303",
+            "period": 15,
+            "i2cDeviceAddress": "0x29",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Ambient Light",
+                        "sensorType": "light"
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "Infrared",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LTR-329",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "ltr329",
+            "period": 15,
+            "i2cDeviceAddress": "0x29",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Ambient Light",
+                        "sensorType": "light"
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "Infrared",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LTR-390",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "ltr390",
+            "period": 15,
+            "i2cDeviceAddress": "0x53",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Ambient Light",
+                        "sensorType": "light"
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "UV Count",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "MAX17048/MAX17049",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "max17048",
+            "period": 15,
+            "i2cDeviceAddress": "0x36",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Battery Cell Voltage",
+                        "sensorType": "voltage"
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "Battery Cell Percent",
+                        "sensorType": "unitless-percent"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "MCP3421",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "mcp3421",
+            "period": 15,
+            "i2cDeviceAddress": "0x68",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "ADC Reading",
+                        "defaultPeriod": 30,
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "MCP9601",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "mcp9601",
+            "period": 15,
+            "i2cDeviceAddress": "0x60", // Alternative addresses: 0x61, 0x62, 0x63, 0x64, 0x65, 0x66, 0x67",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Ambient Temperature (\u00b0C)",
+                        "sensorType": "ambient-temp",
+                        "defaultPeriod": 30
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "Ambient Temperature (\u00b0F)",
+                        "sensorType": "ambient-temp-fahrenheit",
+                        "defaultPeriod": 30
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "Type K Thermocouple (\u00b0C)",
+                        "sensorType": "raw",
+                        "defaultPeriod": 30
+                    }
+                }
+            ]
+        },
+        {
+            "name": "MCP9808",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "mcp9808",
+            "period": 15,
+            "i2cDeviceAddress": "0x18", // Alternative addresses: 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                }
+            ]
+        },
+        {
+            "name": "MPL115A2",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "mpl115a2",
+            "period": 15,
+            "i2cDeviceAddress": "0x60",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "MPRLS",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "mprls",
+            "period": 15,
+            "i2cDeviceAddress": "0x18",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "MS8607",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "ms8607",
+            "period": 15,
+            "i2cDeviceAddress": "0x40", // Alternative addresses: 0x76",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pressure"
+                }
+            ]
+        },
+        {
+            "name": "NAU7802",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "nau7802",
+            "period": 15,
+            "i2cDeviceAddress": "0x2A",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Weight Sensor",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "PCT2075",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "pct2075",
+            "period": 15,
+            "i2cDeviceAddress": "0x48", // Alternative addresses: 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F, 0x70, 0x71, 0x72, 0x73, 0x74, 0x75, 0x76, 0x77, 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F, 0x35, 0x36, 0x37",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                }
+            ]
+        },
+        {
+            "name": "PMSA003I",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "pmsa003i",
+            "period": 15,
+            "i2cDeviceAddress": "0x12",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "pm10-std"
+                },
+                {
+                    "type": "pm25-std"
+                },
+                {
+                    "type": "pm100-std"
+                }
+            ]
+        },
+        {
+            "name": "STEMMA QT Rotary Encoder",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "rotary_encoder",
+            "period": 15,
+            "i2cDeviceAddress": "0x36", // Alternative addresses: 0x37, 0x38, 0x39, 0x3A, Ox3B, 0x3C, 0x3D",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "Rotary Encoder Value",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SCD30",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "scd30",
+            "period": 15,
+            "i2cDeviceAddress": "0x61",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "co2"
+                }
+            ]
+        },
+        {
+            "name": "SCD40/SCD41",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "scd40",
+            "period": 15,
+            "i2cDeviceAddress": "0x62",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "co2"
+                }
+            ]
+        },
+        {
+            "name": "SEN50",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sen50",
+            "period": 15,
+            "i2cDeviceAddress": "0x69",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "pm10-std"
+                },
+                {
+                    "type": "pm25-std"
+                },
+                {
+                    "type": "pm100-std"
+                }
+            ]
+        },
+        {
+            "name": "SEN54",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sen54",
+            "period": 15,
+            "i2cDeviceAddress": "0x69",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pm10-std"
+                },
+                {
+                    "type": "pm25-std"
+                },
+                {
+                    "type": "pm100-std"
+                },
+                {
+                    "type": "voc-index"
+                }
+            ]
+        },
+        {
+            "name": "SEN55",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sen55",
+            "period": 15,
+            "i2cDeviceAddress": "0x69",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pm10-std"
+                },
+                {
+                    "type": "pm25-std"
+                },
+                {
+                    "type": "pm100-std"
+                },
+                {
+                    "type": "voc-index"
+                },
+                {
+                    "type": "nox-index"
+                }
+            ]
+        },
+        {
+            "name": "SEN5x",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sen5x",
+            "period": 15,
+            "i2cDeviceAddress": "0x69",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pm10-std"
+                },
+                {
+                    "type": "pm25-std"
+                },
+                {
+                    "type": "pm100-std"
+                },
+                {
+                    "type": "voc-index"
+                },
+                {
+                    "type": "nox-index"
+                }
+            ]
+        },
+        {
+            "name": "SEN66",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sen66",
+            "period": 15,
+            "i2cDeviceAddress": "0x6B",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                },
+                {
+                    "type": "pm10-std"
+                },
+                {
+                    "type": "pm25-std"
+                },
+                {
+                    "type": "pm100-std"
+                },
+                {
+                    "type": "voc-index"
+                },
+                {
+                    "type": "nox-index"
+                },
+                {
+                    "type": "co2"
+                }
+            ]
+        },
+        {
+            "name": "SGP30",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sgp30",
+            "period": 15,
+            "i2cDeviceAddress": "0x58",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "eco2"
+                },
+                {
+                    "type": "tvoc"
+                }
+            ]
+        },
+        {
+            "name": "SGP40",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sgp40",
+            "period": 15,
+            "i2cDeviceAddress": "0x59",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "voc-index"
+                },
+                {
+                    "type": {
+                        "displayName": "Raw (For Reference Only)",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SHT20",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sht20",
+            "period": 15,
+            "i2cDeviceAddress": "0x40",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "Weatherproof SHT30",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sht30_mesh",
+            "period": 15,
+            "i2cDeviceAddress": "0x44",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "Enclosed SHT30",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sht30_shell",
+            "period": 15,
+            "i2cDeviceAddress": "0x44",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "SHT3X",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sht3x",
+            "period": 15,
+            "i2cDeviceAddress": "0x44", // Alternative addresses: 0x45",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "SHT40",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sht40",
+            "period": 15,
+            "i2cDeviceAddress": "0x44",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "SHT41",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sht41",
+            "period": 15,
+            "i2cDeviceAddress": "0x44",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "SHT45",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "sht45",
+            "period": 15,
+            "i2cDeviceAddress": "0x44",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "SHTC3",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "shtc3",
+            "period": 15,
+            "i2cDeviceAddress": "0x70",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "Si7021",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "si7021",
+            "period": 15,
+            "i2cDeviceAddress": "0x40",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": "humidity"
+                }
+            ]
+        },
+        {
+            "name": "STEMMA Soil Sensor",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "stemma_soil",
+            "period": 15,
+            "i2cDeviceAddress": "0x36", // Alternative addresses: 0x37, 0x38, 0x39",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                },
+                {
+                    "type": {
+                        "displayName": "Capacitive Sensor",
+                        "sensorType": "raw"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "TC74A0",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "tc74a0",
+            "period": 15,
+            "i2cDeviceAddress": "0x48",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                }
+            ]
+        },
+        {
+            "name": "TMP117",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "tmp117",
+            "period": 15,
+            "i2cDeviceAddress": "0x48", // Alternative addresses: 0x49, 0x4A, 0x4B",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "ambient-temp"
+                },
+                {
+                    "type": "ambient-temp-fahrenheit"
+                }
+            ]
+        },
+        {
+            "name": "TSL2591",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "tsl2591",
+            "period": 15,
+            "i2cDeviceAddress": "0x29", // Alternative addresses: 0x39, 0x49",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "light"
+                }
+            ]
+        },
+        {
+            "name": "VCNL4020",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vcnl4020",
+            "period": 15,
+            "i2cDeviceAddress": "0x13",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "light"
+                },
+                {
+                    "type": "proximity"
+                }
+            ]
+        },
+        {
+            "name": "VCNL4040",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vcnl4040",
+            "period": 15,
+            "i2cDeviceAddress": "0x60",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "light"
+                },
+                {
+                    "type": "proximity"
+                }
+            ]
+        },
+        {
+            "name": "VCNL4200",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vcnl4200",
+            "period": 15,
+            "i2cDeviceAddress": "0x51",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "light"
+                },
+                {
+                    "type": "proximity"
+                }
+            ]
+        },
+        {
+            "name": "VEML7700",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "veml7700",
+            "period": 15,
+            "i2cDeviceAddress": "0x10",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": "light"
+                }
+            ]
+        },
+        {
+            "name": "VL53L0X",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vl53l0x",
+            "period": 15,
+            "i2cDeviceAddress": "0x29",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "ToF Sensor",
+                        "sensorType": "proximity",
+                        "defaultPeriod": 30
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VL53L1X",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vl53l1x",
+            "period": 15,
+            "i2cDeviceAddress": "0x29",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "ToF Sensor",
+                        "sensorType": "proximity",
+                        "defaultPeriod": 30
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VL53L4CD",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vl53l4cd",
+            "period": 15,
+            "i2cDeviceAddress": "0x29",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "ToF Sensor",
+                        "sensorType": "proximity",
+                        "defaultPeriod": 30
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VL53L4CX",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vl53l4cx",
+            "period": 15,
+            "i2cDeviceAddress": "0x29",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "ToF Sensor - Object 1",
+                        "sensorType": "proximity",
+                        "defaultPeriod": 30
+                    }
+                },
+                {
+                    "type": {
+                        "displayName": "ToF Sensor - Object 2",
+                        "sensorType": "raw",
+                        "defaultPeriod": 30
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VL6180X",
+            "componentAPI": "i2c",
+            "i2cDeviceName": "vl6180x",
+            "period": 15,
+            "i2cDeviceAddress": "0x29",
+            "i2cDeviceSensorTypes": [
+                {
+                    "type": {
+                        "displayName": "ToF Sensor",
+                        "sensorType": "proximity",
+                        "defaultPeriod": 30
+                    }
+                },
+                {
+                    "type": "light"
+                }
+            ]
+        }
+    ]
+}
