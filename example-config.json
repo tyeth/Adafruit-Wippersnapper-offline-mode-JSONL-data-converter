@@ -60,7 +60,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -78,7 +78,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -96,7 +96,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -114,7 +114,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -144,7 +144,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pressure"
@@ -168,7 +168,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pressure"
@@ -195,7 +195,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pressure"
@@ -285,7 +285,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -357,7 +357,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -375,7 +375,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -393,7 +393,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -411,7 +411,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -730,7 +730,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pressure"
@@ -814,7 +814,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "co2"
@@ -835,7 +835,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "co2"
@@ -874,7 +874,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pm10-std"
@@ -904,7 +904,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pm10-std"
@@ -937,7 +937,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pm10-std"
@@ -970,7 +970,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 },
                 {
                     "type": "pm10-std"
@@ -1039,7 +1039,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1057,7 +1057,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1075,7 +1075,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1093,7 +1093,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1111,7 +1111,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1129,7 +1129,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1147,7 +1147,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1165,7 +1165,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
@@ -1183,7 +1183,7 @@
                     "type": "ambient-temp-fahrenheit"
                 },
                 {
-                    "type": "humidity"
+                    "type": "relative-humidity"
                 }
             ]
         },
